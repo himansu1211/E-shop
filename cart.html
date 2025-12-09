@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - E-Commerce Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>E-Shop</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html" class="active">Cart</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search products...">
+                    <button id="searchBtn">Search</button>
+                </div>
+                <div class="cart-icon">
+                    <a href="cart.html">
+                        <span class="cart-icon-text">🛒</span>
+                        <span id="cartCount">0</span>
+                    </a>
+                </div>
+                <button id="themeToggle">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart-section">
+            <div class="container">
+                <div class="cart-container">
+                    <!-- Minimal cart - only place order button at bottom -->
+                </div>
+                <div class="place-order-section">
+                    <button class="place-order-btn" onclick="placeOrder()">Place Your Order</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 E-Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

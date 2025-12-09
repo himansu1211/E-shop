@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>E-Shop</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search products...">
+                    <button id="searchBtn">Search</button>
+                </div>
+                <div class="cart-icon">
+                    <a href="cart.html">
+                        <img src="assets/icons/cart.svg" alt="Cart" width="24" height="24">
+                        <span id="cartCount">0</span>
+                    </a>
+                </div>
+                <button id="themeToggle">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Welcome to E-Shop</h2>
+                <p>Discover amazing products at great prices</p>
+                <a href="products.html" class="btn-primary">Shop Now</a>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="container">
+                <h3>Shop by Category</h3>
+                <div class="category-grid">
+                    <a href="products.html?category=Electronics" class="category-card">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/29/13/14/keyboard-1869306_1280.jpg" alt="Electronics">
+                        <h4>Electronics</h4>
+                    </a>
+                    <a href="products.html?category=Home" class="category-card">
+                        <img src="https://cdn.pixabay.com/photo/2016/03/27/19/40/coffee-1283672_1280.jpg" alt="Home">
+                        <h4>Home</h4>
+                    </a>
+                    <a href="products.html?category=Essentials" class="category-card">
+                        <img src="https://cdn.pixabay.com/photo/2017/08/02/05/05/water-bottle-2572081_1280.jpg" alt="Essentials">
+                        <h4>Essentials</h4>
+                    </a>
+                    <a href="products.html?category=Fashion" class="category-card">
+                        <img src="https://cdn.pixabay.com/photo/2016/03/27/22/22/black-1284467_1280.jpg" alt="Fashion">
+                        <h4>Fashion</h4>
+                    </a>
+                    <a href="products.html?category=Snacks" class="category-card">
+                        <img src="https://cdn.pixabay.com/photo/2017/08/06/22/01/coffee-2599701_1280.jpg" alt="Snacks">
+                        <h4>Snacks</h4>
+                    </a>
+                    <a href="products.html?category=Toys" class="category-card">
+                        <img src="https://cdn.pixabay.com/photo/2017/03/20/17/49/ford-2165450_1280.jpg" alt="Toys">
+                        <h4>Toys</h4>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <div class="container">
+                <h3>Featured Products</h3>
+                <div id="featuredProducts" class="product-grid">
+                    <!-- Products will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 E-Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
